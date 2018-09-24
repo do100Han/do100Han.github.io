@@ -7,7 +7,7 @@ var Show = function () {
   document.addEventListener("click", function (e) {
     var target = e.target,
         width = document.documentElement.clientWidth;
-    target.preventDefault();
+    e.preventDefault();
     if (width<=1199 && target == _self.menu || _self.nav.classList.contains("js-active")) {
       _self.nav.classList.toggle("js-active");
     }
