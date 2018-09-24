@@ -5,9 +5,9 @@ var Show = function () {
   this.menu = document.getElementsByClassName('menu')[0];
   this.nav = document.getElementsByClassName("nav")[0];
   document.addEventListener("click", function (e) {
-    var target = e.target;
-    console.log(target);
-    if (target == _self.menu || _self.nav.classList.contains("js-active")) {
+    var target = e.target,
+        width = document.documentElement.clientWidth;
+    if (width>=1199 && target == _self.menu || _self.nav.classList.contains("js-active")) {
       _self.nav.classList.toggle("js-active");
     }
   });
