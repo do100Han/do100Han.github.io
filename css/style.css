@@ -1,6 +1,9 @@
 body {
+  min-height: 100vh;
   font-family: 'Roboto', sans-serif;
   color: #333;
+  display: flex;
+  flex-direction: column;
 }
 a {
   text-decoration: none;
@@ -596,6 +599,7 @@ svg.clipboards {
 }
 .main {
   background: #fafbff;
+  flex-grow: 1;
 }
 .main .wrap {
   -webkit-box-align: stretch;
